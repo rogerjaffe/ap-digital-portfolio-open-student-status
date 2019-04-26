@@ -1,0 +1,16 @@
+{
+	"name": "AP Digital Portfolio automatically open student status",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Automatically open student status on the AP Digital Portfolio site",
+	"permissions": [],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://digitalportfolio.collegeboard.org/*"
+			],
+			"js": ["jquery-2.2.2.min.js", "openStudents.js"],
+			"run_at": "document_end"
+		}
+	]
+}
